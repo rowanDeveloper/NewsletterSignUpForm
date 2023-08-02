@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+  <!-- So basically is a two part card -->
+  <main>
+    <!-- This container is my parent element -->
+    <div class="container">
+
+      <!-- Left part of the card -->
+      <picture class="image__wrap">
+        <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 600px)" alt="">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>
+
+      <!-- Right part of the card -->
+      <div class="content">
+    
+        <h1 class="content__heading"> Stay updated!</h1>
+          <p class="content__paragraph">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          
+          <ul class="content__bullets">
+            <li class="bullet-item">
+                <p class="paragraph_bullet">Product discovery and building what matters</p>
+                <p class="paragraph_bullet">Measuring to ensure updates are a success</p>
+                <p class="paragraph_bullet">And much more!</p>
+            </li>
+          </ul>
+         
+          <!-- Sign-up form -->
+          <!-- I think here I can do a grid display -->
+          <form class="sign-up">
+            <label class="email-address" for="email">Email address</label>            
+            <input type="email" class="email-subscription" placeholder="email@company.com">
+            
+            <button type="submit" class="button">Subscribe to monthly newsletter</button>
+          </form>    
+          <!-- Sign-up form end -->
+        </div>   
+     
+  </div>
+
+  <div class="container card-subscription">
+
+    <picture class="icon-wrap">
+      <img src="./assets/images/icon-success.svg" alt="">
+    </picture>
+
+    <h1 class="content__heading subscription-heading">Thanks for subscribing!</h1> 
+    <p class="content__paragraph">
+      A confirmation email has been sent to <span class="email-example">ash@loremcompany.com.</span>      
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+
+    <button class="button subscription-btn">Dismiss message</button>
+  </div>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>

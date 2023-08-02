@@ -1,0 +1,162 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --tomato: hsl(4, 100%, 67%);                      /* This is for the bullets points */
+
+    /* Neutral */
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --body-font-family: 'Roboto', sans-serif;
+    --body-font_size: 16px;
+
+    /* 
+    The font has two weights: 400 and 700 
+    */
+}
+
+html,
+body {
+    height: 100%;                                                           /* So it makes it easier for percent based heights */ 
+}
+
+body {
+    display: grid;
+    gap: 1rem;
+
+    font-family: var(--body-font-family);
+    font-size: --body-font_size;
+    color: var(--dark-slate-grey);
+
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+.container {
+    display: grid; 
+    /* gap: 2rem; */
+    /*align-items: center;
+    justify-content: center; */
+}
+
+@media (min-width: 600px){
+    .container {
+        display: flex; 
+        /* flex-direction: column-reverse; */
+        border: 1px solid blue;
+    }
+
+    .card-subscription {
+        display: grid;
+        /* align-items: center;
+        justify-content: center; */
+        max-width: 30rem;
+    }
+
+    .subscription-btn {
+        margin-top: 5rem;
+    }
+
+}
+
+/* Javascript styles */
+.card-subscription {
+    display: none; 
+    margin: 1.5rem; 
+    padding: 2rem;
+}
+
+.content {
+    border: 1px solid red;
+    display: grid;
+    padding: 2rem; 
+}
+
+.content__heading {
+    font-size: 2.4rem;
+}
+
+.content__paragraph {
+    margin-bottom: 2rem;
+}
+
+.content__bullets {
+    list-style-image: url(./assets/images/icon-list.svg);
+    margin: 0 1rem 0 1.5rem;
+}
+
+.paragraph_bullet {
+    margin-left: 0.5rem;
+}
+
+.sign-up {
+    display: grid;
+}
+
+.email-address {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.email-subscription {
+    cursor: pointer;
+    border: 1px solid var(--grey);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: linear-gradient(pink, red);
+}
+
+/*Subcription success styles */
+.icon-wrap {
+    margin-top: 8rem;
+}
+
+.subscription-heading {
+    margin-top: 2rem;
+}
+
+.email-example {
+    font-weight: 700;
+}
+
+.subscription-btn {
+    margin-top: 16rem;
+}
